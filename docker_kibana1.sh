@@ -7,7 +7,7 @@ docker pull kibana:6.8.6
 rm -rf /elk/kibana
 mkdir -p /elk/kibana/config
 
-###############################  可以各自连接各自的ES，不需要连接集群
+###############################  可以各自连接各自的ES，不需要连接集群，可以生产环境使用
 tee /elk/kibana/config/kibana.yml <<-'EOF'
 
 #设置Kibana映射端口
